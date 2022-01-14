@@ -15,3 +15,19 @@ test("Scénario buzz", () =>{
 
 	expect(result).toBe(expectResult)
 })
+
+test("Scénario fizzbuzz", () =>{
+	const expectResult = "FizzBuzz"
+
+	const result = fizzBuzz(15)
+
+	expect(result).toBe(expectResult)
+})
+
+test("Scénario n non divisible par 3 ou 5", () =>{
+	const expectResult = ""
+
+	const result = fizzBuzz(1)
+
+	expect(result).toBe(expectResult)
+})
