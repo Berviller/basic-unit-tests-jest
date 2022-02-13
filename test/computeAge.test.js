@@ -9,14 +9,14 @@ test('Scénario anniversaire passé', () => {
 
 test('Scénario anniversaire à passé ce mois ci', () => {
     const expectResult = "Age = 23"
-    const bday = new Date(1999, 0, 20)
+    const bday = new Date(1999, 1, 1)
     const result = computeAge(bday, new Date())
     expect(result).toBe(expectResult)
 })
 
 test('Scénario anniversaire à venir ce mois ci', () => {
     const expectResult = "Age = 22"
-    const bday = new Date(1999, 0, 30)
+    const bday = new Date(1999, 1, 28)
     const result = computeAge(bday, new Date())
     expect(result).toBe(expectResult)
 })
@@ -37,7 +37,7 @@ test('Scénario mois future', () => {
 
 test('Scénario jour future', () => {
     const expectResult = "Jour de naissance impossible"
-    const bday = new Date(2022, 0, 30)
+    const bday = new Date(2022, 1, 28)
     const result = computeAge(bday, new Date())
     expect(result).toBe(expectResult)
 })

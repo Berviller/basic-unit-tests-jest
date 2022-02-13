@@ -25,9 +25,9 @@ function computeAge(birthday, currentDate) {
             return "Age = " + (year - byear - 1)
         if (month == bmonth) {
             if (day < bday)
-                return "Age = " + (year - byear - 1)
-            else
                 return "Age = " + (year - byear)
+            else
+                return "Age = " + (year - byear-1)
         }
     }
 }
