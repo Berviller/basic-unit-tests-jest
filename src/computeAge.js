@@ -14,7 +14,7 @@ function computeAge(birthday, currentDate) {
             return "Mois de naissance impossible"
         }
         if (month == bmonth) {
-            if (day > bday) {
+            if (day < bday) {
                 return "Jour de naissance impossible"
             }
         }
